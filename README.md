@@ -8,7 +8,10 @@
 
 This project utilizes machine learning techniques to predict house prices. The model is built using Python and deployed on the Azure Cloud platform. The goal is to provide accurate and reliable predictions for real estate pricing
 
-
+## Project management Plan 
+A link to a spreadsheet that includes the original and final project plan (alternatively, the spreadsheet can be included as an .xls file in the GitHub repo)
+![Project Management Plan.csv](Project Management Plan.csv)
+link: ./Project Management Plan.csv
 ## Instructions
 
  
