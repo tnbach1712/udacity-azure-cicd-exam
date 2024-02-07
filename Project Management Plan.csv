@@ -1,0 +1,16 @@
+Week,Train Model
+2/7/2024,Set up project environment
+2/14/2024,Collect dataset
+2/21/2024,Preprocess data
+2/28/2024,Split data into train/test
+3/6/2024,Train the model
+3/13/2024,Evaluate model performance
+3/20/2024,Fine-tune the model
+3/27/2024,Validate the model
+4/3/2024,Update documentation
+4/10/2024,Test deployment
+4/17/2024,Refine and optimize
+4/24/2024,Finalize project
+,Goals
+,"Train a new model to house price prediction
+"
