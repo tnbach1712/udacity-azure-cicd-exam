@@ -11,36 +11,52 @@ This project utilizes machine learning techniques to predict house prices. The m
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+ 
+* Architectural Diagram
+  With CICD use Github Action
+    ![pipeline-diagram](images/githubaction-pipeline-diagram.png)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+  With CICD use Github Azure pipeline
+    ![azure-pipeline-diagram](images/azure-pipeline-diagram.png)
 
-* Project running on Azure App Service
 
-* Project cloned into Azure Cloud Shell
+* Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+  Project running on Azure App Service
+    ![onappservice](images/onappservice.png)
 
-* Output of a test run
+  Project cloned into Azure Cloud Shell
+  ![Screenshot from 2024-02-07 07-46-18.png](images/1.png)
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+  Passing tests that are displayed after running the `make all` command from the `Makefile`
+  ![2](images/2.png)
 
-* Running Azure App Service from Azure Pipelines automatic deployment
+  Output of a test run
+  ![4](images/4.png)
+  Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+  ![azure-pipeline-success.png](images/azure-pipeline-success.png)
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
+ Running Azure App Service from Azure Pipelines automatic deployment
+![azure-pipeline-success.png](images/azure-pipeline-success.png)
+
+ Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
-
-
 > 
 ```bash
 udacity@Azure:~$ ./make_predict_azure_app.sh
 Port: 443
 {"prediction":[20.35373177134412]}
 ```
+![azure-pipeline-success.png](images/5.png)
 
-* Output of streamed log files from deployed application:
+  Locust test:
+  ![locust1.png](images/locust1.png)
+  ![locust1.png](images/locust2.png)
+
+Output of streamed log files from deployed application:
+`
 az webapp log tail
+`
 ```
 2024-02-07T02:07:13  Welcome, you are now connected to log-streaming service.
 Starting Log Tail -n 10 of existing logs ----
@@ -106,8 +122,11 @@ Starting Live Log Stream ---
 ```
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+<b>Feature Engineering</b>: Explore additional features that might have an impact on house prices. Consider factors like neighborhood demographics, proximity to amenities, or historical sales data. Feature engineering can enhance the predictive power of your model.
 
+<b>Data Cleaning and Preprocessing</b>: Ensure your dataset is clean and free of missing values or outliers. Apply appropriate data preprocessing techniques such as scaling, normalization, or handling categorical variables. This can improve the accuracy and reliability of your predictions.
+
+<b>Model Selection and Evaluation</b>: Experiment with different machine learning algorithms and evaluate their performance. Consider algorithms like linear regression, decision trees, random forests, or gradient boosting. Use evaluation metrics such as mean squared error (MSE) or R-squared to select the best-performing model.
 ## Demo 
 
 <TODO: Add link Screencast on YouTube>
