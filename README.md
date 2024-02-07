@@ -130,4 +130,6 @@ Starting Live Log Stream ---
 ## Demo 
 
 <TODO: Add link Screencast on YouTube>
+https://www.youtube.com/watch?v=LxChCMcP2cw
+https://www.youtube.com/watch?v=Yh88nOBR1WU
 
