@@ -12,6 +12,10 @@ This project utilizes machine learning techniques to predict house prices. The m
 A link to a spreadsheet that includes the original and final project plan (alternatively, the spreadsheet can be included as an .xls file in the GitHub repo)
 ![Project Management Plan.csv](Project Management Plan.csv)
 link: ./Project Management Plan.csv
+
+Trello:
+https://trello.com/b/eFJDRhmc/udacity-project-manager
+
 ## Instructions
 
  
